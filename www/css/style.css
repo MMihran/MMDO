@@ -405,6 +405,8 @@ header .navbar-right {
 }
 header .navbar-right a {
   padding: 0;
+  display: inline-block;
+  color: #e5711d;
   font-size: 15px;
   margin-top: 8px;
 }
