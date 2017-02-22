@@ -933,6 +933,175 @@ footer .foot-bot div ul {
 }
 .catalog .catalog-wrap .item {
   margin: 0 7.5px 45px;
+  clear: right;
+}
+.catalog .item-wrap {
+  display: inline-block;
+  float: left;
+}
+.filter {
+  width: 280px;
+  margin: 0 7.5px 45px;
+  padding: 10px 30px;
+  float: left;
+  background-color: #f8f7f5;
+}
+.filter:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.filter p {
+  font-size: 14px;
+  font-family: "Formular-Medium";
+  margin-bottom: 15px;
+}
+.filter .scroll-box {
+  padding-bottom: 25px;
+  padding-top: 55px;
+  border-bottom: 1px solid #dfdedc;
+  height: 350px;
+  min-width: 220px;
+  position: relative;
+}
+.filter.filter-open + .item-wrap {
+  width: 885px;
+}
+.scroll-wrap {
+  position: relative;
+}
+.scroll-wrap > p {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+.scrollable.default-skin .scroll-bar .thumb {
+  background-color: #e5711d;
+  opacity: 1;
+}
+.scrollable.default-skin .scroll-bar.vertical {
+  background-color: #fff;
+}
+.brand-filter li {
+  margin-bottom: 10px;
+}
+.brand-filter li:last-child {
+  margin-bottom: 0;
+}
+.brand-filter a {
+  font-size: 14px;
+  font-family: "Formular-Light";
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+.brand-filter a:hover {
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: none;
+}
+.size-choose {
+  overflow: hidden;
+  padding-bottom: 17px;
+  margin-top: 20px;
+  border-bottom: 1px solid #dfdedc;
+}
+.size-choose p {
+  padding-left: 15px;
+}
+.check-wrap label {
+  display: block;
+  font-weight: normal;
+  font-family: "Formular-Light";
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+.check-wrap label:last-child {
+  margin-bottom: 0;
+}
+.check-wrap label span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: sub;
+  position: relative;
+}
+.check-wrap label span:before {
+  content: "";
+  display: inline-block;
+  font-size: 22px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  border-radius: 8px;
+  background: #fff;
+}
+.check-wrap label input[type=checkbox] {
+  display: none;
+}
+.check-wrap label input[type=checkbox]:checked + span:before {
+  background: url(../img/chk.png);
+}
+.check-wrap.scroll-box {
+  padding-bottom: 30px;
+}
+.range-filter {
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+.range-filter .panel-body {
+  padding: 0;
+}
+.range-filter input {
+  width: 98px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  font-family: "Formular-Light";
+}
+.range-filter b {
+  padding: 0 5px;
+}
+.range-filter .irs-line {
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  top: 0;
+  height: 7px;
+}
+.range-filter .irs-bar {
+  background: #e5711d;
+  border: none;
+  box-shadow: none;
+  top: 0;
+  height: 7px;
+}
+.range-filter .irs {
+  height: 7px;
+  width: auto;
+  margin: 0 0 15px;
+}
+.range-filter .irs-from,
+.range-filter .irs-to,
+.range-filter .irs-single,
+.range-filter .irs-min,
+.range-filter .irs-max {
+  display: none;
+}
+.range-filter .irs-slider,
+.range-filter .irs-slider:hover,
+.range-filter .irs-slider:active {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border: none;
+  position: absolute;
+  top: -6px;
+  box-shadow: none;
 }
 .cart-page {
   padding-top: 0;
