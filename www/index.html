@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css" type="text/css" /><!-- 
 	<link href="css/style.less" rel="stylesheet/less" type="text/css" />
-	<script type="text/javascript" src="js/less.min.js"></script>
+	<script type="text/javascript" src="js/less.min.js"></script>-->
 </head>
 <body>
 
@@ -72,7 +72,7 @@
 				</div>
 			</div>
 			<div class="slide">
-				<img src="img/slide-pic.jpg" alt="">
+				<img src="img/slide-pic-2.jpg" alt="">
 				<div class="text-box">
 					<hr>
 					<h2>Bupe for acid casuals </h2>
@@ -90,7 +90,7 @@
 				</div>
 			</div>
 			<div class="slide">
-				<img src="img/slide-pic.jpg" alt="">
+				<img src="img/slide-pic-2.jpg" alt="">
 				<div class="text-box">
 					<hr>
 					<h2>Dupe for acid casuals </h2>
@@ -465,6 +465,15 @@ $(document).ready(function(){
   		}
   		]
 	});
+	$('.featured-wrap').on('afterChange', function(event, slick, currentSlide){
+        $('.slick-active .display').removeClass('hidden');
+        $('.slick-active .display').addClass('animated fadeInDown');
+    });
+
+    $('.featured-wrap').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $('.slick-active .display').removeClass('animated fadeInDown');
+        $('.slick-active .display').addClass('hidden');
+    });
 });
 	
 </script>

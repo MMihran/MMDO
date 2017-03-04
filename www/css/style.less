@@ -173,7 +173,8 @@ input:focus{
 	.xs({
 		position: static;
 		height: auto;
-		margin-right: 0;
+		margin-right: -15px;
+		padding-left: 0;
 		font-size: 28px;
 		span{
 			font-size: 11px;
@@ -519,8 +520,14 @@ input:focus{
 	width: 280px;
 	float: left;
 	border: 1px solid #ebebeb;
+	transition: box-shadow 0.5s;
 	& + .item{
 		margin-left: 15px;
+	}
+	&:hover{
+		-webkit-box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.25);
+		-moz-box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.25);
+		box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.25);
 	}
 	.img-wrap{
 		position: relative;
@@ -929,6 +936,7 @@ footer{
 			font-size: @head-fz;
 			font-family: "FuturaDemiC";
 			text-align: left;
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 		}
 		p{
 			font-size: @body-fz;
@@ -960,7 +968,6 @@ footer{
 			}
 			h2{
 				font-size: @head-md-fz;
-				text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 			}
 			p{
 				font-size: @body-md-fz;
@@ -1102,6 +1109,10 @@ footer{
 				&:focus{
 					box-shadow: none;
 				}
+				transition: box-shadow 0.5s;
+				-webkit-box-shadow: 0px 0px 0px 0 rgba(0,0,0,0);
+				-moz-box-shadow: 0px 0px 0px 0 rgba(0,0,0,0);
+				box-shadow: 0px 0px 0px 0 rgba(0,0,0,0);
 			}
 			button.head-search{
 				background-color: transparent;
@@ -1111,6 +1122,11 @@ footer{
 				top: 14px;
 				font-size: 20px;
 				z-index: 2;
+			}
+			&:hover input{
+				-webkit-box-shadow: 0px 0px 25px 0 rgba(0,0,0,0.25);
+				-moz-box-shadow: 0px 0px 25px 0 rgba(0,0,0,0.25);
+				box-shadow: 0px 0px 25px 0 rgba(0,0,0,0.25);
 			}
 		}
 	}
@@ -1521,6 +1537,9 @@ footer{
 				font-size: 24px;
 				margin-bottom: 15px;
 			}
+		}
+		.i2-left, .i2-right{
+			float: none;
 		}
 	});
 }

@@ -119,7 +119,8 @@ input:focus {
   .logo {
     position: static;
     height: auto;
-    margin-right: 0;
+    margin-right: -15px;
+    padding-left: 0;
     font-size: 28px;
   }
   .logo span {
@@ -477,9 +478,15 @@ input:focus {
   width: 280px;
   float: left;
   border: 1px solid #ebebeb;
+  transition: box-shadow 0.5s;
 }
 .item + .item {
   margin-left: 15px;
+}
+.item:hover {
+  -webkit-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.25);
 }
 .item .img-wrap {
   position: relative;
@@ -623,7 +630,8 @@ header .navbar-brand span {
   header .navbar-brand {
     position: static;
     height: auto;
-    margin-right: 0;
+    margin-right: -15px;
+    padding-left: 0;
     font-size: 28px;
   }
   header .navbar-brand span {
@@ -894,7 +902,8 @@ footer .navbar-brand span {
   footer .navbar-brand {
     position: static;
     height: auto;
-    margin-right: 0;
+    margin-right: -15px;
+    padding-left: 0;
     font-size: 28px;
   }
   footer .navbar-brand span {
@@ -1089,6 +1098,7 @@ footer .collapse {
   font-size: 88px;
   font-family: "FuturaDemiC";
   text-align: left;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 .i1 .slide p {
   font-size: 15px;
@@ -1118,7 +1128,6 @@ footer .collapse {
   }
   .i1 .slide h2 {
     font-size: 70px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   }
   .i1 .slide p {
     font-size: 14px;
@@ -1252,6 +1261,10 @@ footer .collapse {
   border-radius: 27px;
   font-size: 15px;
   padding: 0 27px;
+  transition: box-shadow 0.5s;
+  -webkit-box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0);
 }
 .i2 .left-top form input:focus {
   box-shadow: none;
@@ -1264,6 +1277,11 @@ footer .collapse {
   top: 14px;
   font-size: 20px;
   z-index: 2;
+}
+.i2 .left-top form:hover input {
+  -webkit-box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.25);
 }
 .i2 h2 {
   color: #e5711d;
@@ -1667,6 +1685,10 @@ footer .collapse {
     font-size: 24px;
     margin-bottom: 15px;
   }
+  .i2 .i2-left,
+  .i2 .i2-right {
+    float: none;
+  }
 }
 .i3 {
   padding-top: 50px;
@@ -1676,9 +1698,15 @@ footer .collapse {
   width: 280px;
   float: left;
   border: 1px solid #ebebeb;
+  transition: box-shadow 0.5s;
 }
 .i3 .item + .item {
   margin-left: 15px;
+}
+.i3 .item:hover {
+  -webkit-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.25);
 }
 .i3 .item .img-wrap {
   position: relative;
@@ -2403,12 +2431,18 @@ footer .collapse {
   width: 280px;
   float: left;
   border: 1px solid #ebebeb;
+  transition: box-shadow 0.5s;
   float: none;
   display: inline-block;
   vertical-align: top;
 }
 .cart-page .item + .item {
   margin-left: 15px;
+}
+.cart-page .item:hover {
+  -webkit-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.25);
 }
 .cart-page .item .img-wrap {
   position: relative;
