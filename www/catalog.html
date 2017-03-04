@@ -8,10 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css">
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.skinHTML5.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.custom-scrollbar.css">
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<!-- <link href="css/style.less" rel="stylesheet/less" type="text/css" />
+	<!-- <link rel="stylesheet" href="css/style.css" type="text/css" /> -->
+	<link href="css/style.less" rel="stylesheet/less" type="text/css" />
 	<script type="text/javascript" src="js/less.min.js"></script>
- --></head>
+</head>
 <body>
 
 <header>
@@ -46,15 +46,15 @@
 		        <li><a href="#">Красота</a></li>
 		        <li><a href="#">Скидки</a></li>
 		      </ul>
+		      <div class="nav navbar-nav navbar-right cart-href-wrap">
+		        	<a href="#">Корзина <span><img src="img/cart-ico.png">2</span></a>
+		      </div>
 		      <form class="navbar-form navbar-left">
 		        <button type="submit" class="head-search"><span class="glyphicon glyphicon-search"></span></button>
 		        <div class="form-group">
 		          <input type="text" class="form-control" placeholder="Поиск по сайту">
 		        </div>
 		      </form>
-		      <div class="nav navbar-nav navbar-right cart-href-wrap">
-		        	<a href="#">Корзина <span><img src="img/cart-ico.png">2</span></a>
-		      </div>
 		    </div><!-- /.navbar-collapse -->
 		  </div>
 		</nav>
@@ -547,6 +547,7 @@
 	</div>
 </section>
 
+
 <section class="i4">
 	<div class="container">
 		<div class="i4-outline">
@@ -558,22 +559,22 @@
 				<li><a href="#">Хиты продаж</a></li>
 			</ul>
 			<div class="i4-wrap">
-				<div class="i4-item col-md-3">
+				<div class="i4-item col-md-3 col-sm-6">
 					<img src="img/i4-1.png" alt="">
 					<p class="head">Большой выбор товаров</p>
 					<p>В интернет-магазине одежды и обуви Lamoda.ru каждый может выбрать и купить одежду, обувь или аксессуар в 2 клика. В каталоге интернет-магазина Lamoda.ru более 1000 брендов мужской, женской и детской обуви и одежды разных ценовых категорий, всего более 2&nbsp;000&nbsp;000 товаров.</p>
 				</div>
-				<div class="i4-item col-md-3">
+				<div class="i4-item col-md-3 col-sm-6">
 					<img src="img/i4-2.png" alt="">
 					<p class="head">Доставка с примеркой</p>
 					<p>У нас есть собственная служба доставки Lamoda Express, которая работает в 66 крупнейших городах России: Москва и МО, Санкт-Петербург, Нижний Новгород, Новосибирск, Екатеринбург, Самара, Тольятти, Тюмень, Челябинск и другие. Срок доставки — 1-2 дня. Бесплатная доставка по всей России!</p>
 				</div>
-				<div class="i4-item col-md-3">
+				<div class="i4-item col-md-3 col-sm-6">
 					<img src="img/i4-3.png" alt="">
 					<p class="head">Оплата и <br>возврат</p>
 					<p>В интернет-магазине одежды и обуви Lamoda.ru каждый может выбрать и купить одежду, обувь или аксессуар в 2 клика. В каталоге интернет-магазина Lamoda.ru более 1000 брендов мужской, женской и детской обуви и одежды разных ценовых категорий, всего более 2&nbsp;000&nbsp;000 товаров.</p>
 				</div>
-				<div class="i4-item col-md-3">
+				<div class="i4-item col-md-3 col-sm-6">
 					<img src="img/i4-4.png" alt="">
 					<p class="head">Другие продавцы на Lamoda</p>
 					<p>У нас есть собственная служба доставки Lamoda Express, которая работает в 66 крупнейших городах России: Москва и МО, Санкт-Петербург, Нижний Новгород, Новосибирск, Екатеринбург, Самара, Тольятти, Тюмень, Челябинск и другие. Срок доставки — 1-2 дня. Бесплатная доставка по всей России!</p>
@@ -582,6 +583,7 @@
 		</div>
 	</div>
 </section>
+
 
 <section class="i5">
 	<div class="container">
@@ -596,8 +598,15 @@
 <footer>
 	<div class="container">
 		<div class="foot-top">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+	    	    <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		    </button>
 			<a class="navbar-brand" href="#"><b>ММ<i>ДО</i></b> <span>Магазин модной <br>дисконтной одежды</span></a>
-			<ul class="nav navbar-nav links">
+			<div class="clearfix visible-xs"></div>
+			<ul class="nav navbar-nav links collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 				<li><a href="#">Новинки</a></li>
 				<li><a href="#">Бренды</a></li>
 				<li><a href="#">Мужское</a></li>
@@ -610,7 +619,6 @@
 		</div>
 		<div class="clearfix"></div>
 		<div class="foot-bot">
-			<p>2005-2017 © Wildberries.ru — модный интернет-магазин одежды, обуви и аксессуаров. Все права защищены. Доставка по всей России!</p>
 			<div>
 				<ul class="col-sm-4">
 					<li><a href="#">Помощь</a></li>
@@ -631,6 +639,7 @@
 					<li><a href="#">Товары партнёров</a></li>
 				</ul>
 			</div>
+			<p>2005-2017 © Wildberries.ru — модный интернет-магазин одежды, обуви и аксессуаров. Все права защищены. Доставка по всей России!</p>
 		</div>
 	</div>
 </footer>
