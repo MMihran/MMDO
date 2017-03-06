@@ -505,6 +505,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/grids.js"></script>
 <script src="js/skrollr.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 
@@ -553,6 +554,10 @@ $(document).ready(function(){
         $('.slick-active img, .slick-active .text-box').addClass('animatedScale');
     });
     var s = skrollr.init();
+
+
+
+    $('.item .text-wrap p').responsiveEqualHeightGrid();
 });
 	
 </script>
