@@ -39,6 +39,12 @@
     padding: 0 10px;
   }
 }
+@media (min-width: 768px) {
+  .nav.links li:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
 /*md*/
 /*sm*/
 /*tb*/
@@ -134,11 +140,34 @@ input:focus {
 .links-nav li + li {
   margin-left: 45px;
 }
+.links-nav .dropdown-menu {
+  padding: 5px 15px 2px;
+  left: -15px;
+  background-color: #f8f7f5;
+  top: 90%;
+}
+.links-nav .dropdown-menu a {
+  color: #000;
+  display: block;
+  border-bottom: none !important;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 15px;
+}
+.links-nav .dropdown-menu a:hover {
+  text-decoration: none;
+}
+.links-nav .dropdown-menu a:hover span {
+  border-bottom: none !important;
+}
+.links-nav .dropdown-menu a span {
+  border-bottom: 1px solid #e5711d !important;
+}
 .links-nav a {
   font-size: 17px;
   padding: 0;
   font-weight: 600;
-  border-bottom: 1px solid #e5711d;
+  border-bottom: 1px solid #e5711d !important;
   transition: border-bottom 0.2s;
 }
 .links-nav a:hover {
@@ -166,6 +195,19 @@ input:focus {
   .links-nav {
     margin: 0;
     float: none !important;
+  }
+  .links-nav .open > .dropdown-menu {
+    display: none;
+  }
+  .links-nav .dropdown-menu {
+    position: static !important;
+    float: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 20px 15px 5px;
+  }
+  .links-nav .dropdown-menu a {
+    text-align: center;
   }
   .links-nav li {
     display: block;
@@ -655,11 +697,34 @@ header .links li {
 header .links li + li {
   margin-left: 45px;
 }
+header .links .dropdown-menu {
+  padding: 5px 15px 2px;
+  left: -15px;
+  background-color: #f8f7f5;
+  top: 90%;
+}
+header .links .dropdown-menu a {
+  color: #000;
+  display: block;
+  border-bottom: none !important;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 15px;
+}
+header .links .dropdown-menu a:hover {
+  text-decoration: none;
+}
+header .links .dropdown-menu a:hover span {
+  border-bottom: none !important;
+}
+header .links .dropdown-menu a span {
+  border-bottom: 1px solid #e5711d !important;
+}
 header .links a {
   font-size: 17px;
   padding: 0;
   font-weight: 600;
-  border-bottom: 1px solid #e5711d;
+  border-bottom: 1px solid #e5711d !important;
   transition: border-bottom 0.2s;
 }
 header .links a:hover {
@@ -687,6 +752,19 @@ header .links a:hover {
   header .links {
     margin: 0;
     float: none !important;
+  }
+  header .links .open > .dropdown-menu {
+    display: none;
+  }
+  header .links .dropdown-menu {
+    position: static !important;
+    float: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 20px 15px 5px;
+  }
+  header .links .dropdown-menu a {
+    text-align: center;
   }
   header .links li {
     display: block;
@@ -930,11 +1008,34 @@ footer .links li {
 footer .links li + li {
   margin-left: 45px;
 }
+footer .links .dropdown-menu {
+  padding: 5px 15px 2px;
+  left: -15px;
+  background-color: #f8f7f5;
+  top: 90%;
+}
+footer .links .dropdown-menu a {
+  color: #000;
+  display: block;
+  border-bottom: none !important;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 15px;
+}
+footer .links .dropdown-menu a:hover {
+  text-decoration: none;
+}
+footer .links .dropdown-menu a:hover span {
+  border-bottom: none !important;
+}
+footer .links .dropdown-menu a span {
+  border-bottom: 1px solid #e5711d !important;
+}
 footer .links a {
   font-size: 17px;
   padding: 0;
   font-weight: 600;
-  border-bottom: 1px solid #e5711d;
+  border-bottom: 1px solid #e5711d !important;
   transition: border-bottom 0.2s;
 }
 footer .links a:hover {
@@ -962,6 +1063,19 @@ footer .links a:hover {
   footer .links {
     margin: 0;
     float: none !important;
+  }
+  footer .links .open > .dropdown-menu {
+    display: none;
+  }
+  footer .links .dropdown-menu {
+    position: static !important;
+    float: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 20px 15px 5px;
+  }
+  footer .links .dropdown-menu a {
+    text-align: center;
   }
   footer .links li {
     display: block;

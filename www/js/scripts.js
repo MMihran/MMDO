@@ -21,6 +21,20 @@ $('.count-plus').click(function(e) {
 
 
 
+/*Header Menu*/
+if (window.matchMedia('(min-width: 768px)').matches){
+  $('.links>li').hover(function(){ 
+    $('.dropdown-toggle', this).trigger('click'); 
+  });
+}
+if (window.matchMedia('(max-width: 768px)').matches){
+  $(".links .dropdown-toggle").click(function(e){
+    e.preventDefault();
+    $(".links .open .dropdown-menu").not($(this).next(".dropdown-menu")).slideUp();
+    $(this).next(".dropdown-menu").slideToggle();
+  });
+};
+
 
 /*del*/
 $('.basket-item .del').click(function(e) {
